@@ -1,4 +1,5 @@
 import setuptools
+import pyminfraud
 
 setuptools.setup(
 	author           = pyminfraud.__author__,
