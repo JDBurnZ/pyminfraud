@@ -9,6 +9,8 @@ http://creativecommons.org/licenses/by/3.0/'''
 __version__ = '1.0.0'
 __created__ = '2013-10-01'
 __status__ = 'Production'
+__description__ = 'Python library for interfacing with MaxMind\'s minFraud Web Service API.',
+__url__ = 'https://www.github.com/JDBurnZ/pyminfraud'
 
 # Import standard modules
 import hashlib
