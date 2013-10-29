@@ -11,6 +11,8 @@ __created__ = '2013-10-01'
 __status__ = 'Production'
 __description__ = 'Python library for interfacing with MaxMind\'s minFraud Web Service API.',
 __url__ = 'https://www.github.com/JDBurnZ/pyminfraud'
+__packages__ = ['pyminfraud']
+__keywords__ = 'python maxmind minfraud pyminfraud'
 
 # Import standard modules
 import hashlib
