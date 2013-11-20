@@ -214,3 +214,5 @@ Optional pyminfraud Fields
 * **cc_cvv** (Limited To): "Y" or "N". Whether or not the CVV code was confirmed as a match by your AVS.
 * **service_type** (Limited To): "standard" or "premium". The type of request to minFraud.
 * **proxy_ip** (String): The "X-Forwarded-For" or "Client-IP" HTTP header (whichever is present, if present) passed in the user's request.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/JDBurnZ/pyminfraud/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
