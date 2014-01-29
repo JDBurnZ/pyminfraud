@@ -4,7 +4,15 @@ import compatibility
 
 # Supress pycountry logging warnings:
 import logging
-logging.getLogger('pycountry.db').addHandler(logging.NullHandler())
+
+try:
+    from logging import NullHandler
+except ImportError:
+    class NullHandler(logging.Handler):
+        def emit(self, record):
+            pass
+
+logging.getLogger('pycountry.db').addHandler(NullHandler())
 
 def avs(field_rules, field_value):
 	# http://en.wikipedia.org/wiki/Address_Verification_System#Address_Verification_Service_.28AVS.29_codes
