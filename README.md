@@ -179,13 +179,13 @@ previously specified in "i".
 Required pyminfraud Fields
 
 * **ip** (v4 or v6 IP Address): IP address of the user.
+
+Optional pyminfraud Fields
+
 * **billing_city** (String): Billing City.
 * **billing_state** (String): Billing State, Region or Province
 * **billing_zip** (String): Billing Zip or Postal Code.
 * **billing_country** (ISO 3166): ISO 3166-1 alpha-2, alpha-3, numeric or short name of the Billing Country.
-
-Optional pyminfraud Fields
-
 * **shipping_address** (String): Shipping Address.
 * **shipping_city** (String): Shipping City.
 * **shipping_state** (String): Shipping State, Region or Province.
