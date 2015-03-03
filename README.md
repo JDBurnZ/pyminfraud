@@ -1,4 +1,4 @@
-pyminfraud v1.0.1
+pyminfraud v1.0.2
 =================
 
 `pyminfraud` is a Python 2.6+ and Python 3 compatible library for interfacing
