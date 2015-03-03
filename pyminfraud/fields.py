@@ -96,10 +96,6 @@ rules = {
 required = [
 	'license_key',
 	'ip',
-	'billing_city',
-	'billing_state',
-	'billing_zip',
-	'billing_country',
 ]
 
 # Resolve minFraud arguments to pyminfraud field names
