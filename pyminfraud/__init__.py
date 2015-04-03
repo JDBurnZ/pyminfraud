@@ -19,13 +19,13 @@ import hashlib
 import sys
 
 # Import pyminfraud-Specific modules
-import exceptions
-import errors
-import validate
-import transform
-import compatibility
-from documentation import documentation
-from fields import rules, required, lookup
+from . import exceptions
+from . import errors
+from . import validate
+from . import transform
+from . import compatibility
+from .documentation import documentation
+from .fields import rules, required, lookup
 
 request_hosts = [
 	'minfraud.maxmind.com',

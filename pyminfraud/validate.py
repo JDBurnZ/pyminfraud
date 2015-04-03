@@ -1,6 +1,6 @@
 # coding: utf-8
 
-import compatibility
+from . import compatibility
 
 # Supress pycountry logging warnings:
 import logging
