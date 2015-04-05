@@ -170,6 +170,8 @@ class Client:
 			return response['err']
 
 	def _response_parse(self, response):
+		if sys.version_info >= (3, ):
+			response = response.decode('utf-8')
 		return dict((key, value) for (key, value) in [row.split('=') for row in response.split(';')]) # Python 2 and 3?
 
 	def _request_arguments(self):
@@ -177,7 +179,11 @@ class Client:
 		for field_name, field_value in compatibility.iterdict(self.fields):
 			argument = fields.rules[field_name]['arg'];
 			arguments[argument] = field_value
-		return compatibility.urlencode(arguments)
+		data = compatibility.urlencode(arguments)
+		if sys.version_info >= (3, ):
+			data = data.encode('utf-8')
+		return data
+
 
 	def _request_url(self, protocol, host, uri):
 		return protocol + '://' + host + '/' + uri
