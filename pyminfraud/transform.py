@@ -34,7 +34,7 @@ import hashlib
 			  `` sy"""
 
 def md5(value):
-	return hashlib.md5(value).hexdigest()
+	return hashlib.md5(value.encode('utf-8')).hexdigest()
 
 def bin(value):
 	return value[0:6]
