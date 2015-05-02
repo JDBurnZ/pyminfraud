@@ -216,6 +216,6 @@ Optional pyminfraud Fields
 
 
 Donations
-PyMinFraud is free software, but donations help the developer spend more time maintaining this projects and others like it.
+PyMinFraud is free software, but donations help the developer spend more time maintaining this project and others like it.
 <br />
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S42X58PL8SR2Y"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" /></a>
