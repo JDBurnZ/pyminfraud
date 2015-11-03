@@ -171,7 +171,10 @@ class Client:
 
 	def _response_parse(self, response):
 		if sys.version_info >= (3, ):
-			response = response.decode('utf-8')
+			try:
+				response = response.decode('utf-8')
+			except UnicodeError:
+				response = response.decode('latin_1')
 		return dict((key, value) for (key, value) in [row.split('=') for row in response.split(';')]) # Python 2 and 3?
 
 	def _request_arguments(self):
