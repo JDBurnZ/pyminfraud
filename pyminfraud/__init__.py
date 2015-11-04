@@ -6,7 +6,7 @@ __email__ = 'joshuadburns@hotmail.com'
 __license__ = '''pyminfraud by Joshua D. Burns is licensed under the Creative Commons Attribution
 3.0 Unported License. To view a copy of this license, please visit:
 http://creativecommons.org/licenses/by/3.0/'''
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 __created__ = '2013-10-01'
 __status__ = 'Production'
 __description__ = 'Python library for interfacing with MaxMind\'s minFraud Web Service API.',
