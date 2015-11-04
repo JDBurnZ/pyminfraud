@@ -106,11 +106,11 @@ class Client:
 		self.result = self._response_parse(self.response.read())
 
 		# Check if resulting response contains errors.
-		if self._response_errors(self.response):
+		if self._response_errors(self.result):
 			raise exceptions.ResponseError(errors.response_errors[self.result['err']])
 
 		# Check if resulting response contains warnings.
-		if self._response_warnings(self.response):
+		if self._response_warnings(self.result):
 			raise exceptions.ResponseWarning(errors.response_warnings[self.result['err']])
 
 		return self.result
