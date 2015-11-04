@@ -12,5 +12,6 @@ setuptools.setup(
 	name             = pyminfraud.__project__,
 	packages         = pyminfraud.__packages__,
 	url              = pyminfraud.__url__,
+	download_url     = pyminfraud.__downloadurl__,
 	version          = pyminfraud.__version__,
 )

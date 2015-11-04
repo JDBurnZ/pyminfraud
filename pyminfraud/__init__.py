@@ -11,6 +11,7 @@ __created__ = '2013-10-01'
 __status__ = 'Production'
 __description__ = 'Python library for interfacing with MaxMind\'s minFraud Web Service API.',
 __url__ = 'https://www.github.com/JDBurnZ/pyminfraud'
+__downloadurl__ = 'https://www.github.com/JDBurnZ/pyminfraud/tarball/1.0.3'
 __packages__ = ['pyminfraud']
 __keywords__ = 'python maxmind minfraud pyminfraud'
 
