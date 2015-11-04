@@ -6,11 +6,12 @@ __email__ = 'joshuadburns@hotmail.com'
 __license__ = '''pyminfraud by Joshua D. Burns is licensed under the Creative Commons Attribution
 3.0 Unported License. To view a copy of this license, please visit:
 http://creativecommons.org/licenses/by/3.0/'''
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 __created__ = '2013-10-01'
 __status__ = 'Production'
 __description__ = 'Python library for interfacing with MaxMind\'s minFraud Web Service API.',
 __url__ = 'https://www.github.com/JDBurnZ/pyminfraud'
+__downloadurl__ = 'https://www.github.com/JDBurnZ/pyminfraud/tarball/1.0.3'
 __packages__ = ['pyminfraud']
 __keywords__ = 'python maxmind minfraud pyminfraud'
 
@@ -106,11 +107,11 @@ class Client:
 		self.result = self._response_parse(self.response.read())
 
 		# Check if resulting response contains errors.
-		if self._response_errors(self.response):
+		if self._response_errors(self.result):
 			raise exceptions.ResponseError(errors.response_errors[self.result['err']])
 
 		# Check if resulting response contains warnings.
-		if self._response_warnings(self.response):
+		if self._response_warnings(self.result):
 			raise exceptions.ResponseWarning(errors.response_warnings[self.result['err']])
 
 		return self.result
