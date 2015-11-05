@@ -18,6 +18,7 @@ __keywords__ = 'python maxmind minfraud pyminfraud'
 # Import standard modules
 import hashlib
 import sys
+import logging
 
 # Import pyminfraud-Specific modules
 from . import exceptions
@@ -27,6 +28,8 @@ from . import transform
 from . import compatibility
 from .documentation import documentation
 from .fields import rules, required, lookup
+
+logger = logging.getLogger('pyminfraud')
 
 request_hosts = [
 	'minfraud.maxmind.com',
@@ -112,7 +115,7 @@ class Client:
 
 		# Check if resulting response contains warnings.
 		if self._response_warnings(self.result):
-			raise exceptions.ResponseWarning(errors.response_warnings[self.result['err']])
+			logger.warn(errors.response_warnings[self.result['err']], extra={'result': self.result})
 
 		return self.result
 

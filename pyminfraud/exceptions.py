@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import warnings
-
 class AuthException(Exception):
 	pass
 
@@ -16,6 +14,3 @@ class MissingRequiredFields(Exception):
 
 class ResponseError(Exception):
 	pass
-
-def ResponseWarning(message):
-	warnings.warn(message, 'UserWarning', stacklevel=2)
